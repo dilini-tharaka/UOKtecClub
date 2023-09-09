@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/teams.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -17,24 +18,37 @@
   <body>
     <header>
       <div class="d-flex align-items-center">
-        <img src="img/logo.png" alt="" class="logo" />
+        <img src="img/logo.png" alt="" class="logo d-none d-lg-flex" />
         <h2>TechClub</h2>
       </div>
-      <nav class="nav-list">
+      <nav class="nav-list d-none d-lg-flex">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="event.html">Events</a>
         <a href="#" class="active">Teams</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a href="index.html"
+        ><i class="fa-solid fa-house d-flex d-lg-none"></i
+      ></a>
+      <a href="about.html">
+        <i class="fa-solid fa-circle-info d-flex d-lg-none"></i>
+      </a>
+      <a href="event.html"
+        ><i class="fa-solid fa-camera d-flex d-lg-none"></i
+      ></a>
+      <a href="contact.html"
+        ><i class="fa-solid fa-phone-volume d-flex d-lg-none"></i
+      ></a>
     </header>
 
     <section id="services" class="services">
+      <div>
+        <!-- <div class="layer"></div> -->
+        <img src="img/teambg.jpg" alt="" class="w-100 mt-5 mb-5" />
+      </div>
       <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Services</h2>
-          <!-- <p>Check our Services</p> -->
-        </div>
+        <div class="section-title"></div>
 
         <div class="row">
           <div
@@ -47,14 +61,16 @@
                 <i class="fa fa-globe"></i>
               </div>
 
-              <h4><a href="">Designing Team</a></h4>
+              <h4><a href="" class="topic">Designing Team</a></h4>
               <p>
                 The Web Designing Team is a group of creative minds who
                 specialize in crafting the visual elements of websites. They
                 focus on designing user interfaces that are not only visually
                 appealing but also intuitive and user-friendly. This team uses
                 their expertise in color theory, typography, and layout to
-                create engaging web experiences.
+                create engaging web experiences.Design is one of the most
+                dynamic sectors that regularly contribute to different
+                activities of Club.
               </p>
             </div>
           </div>
@@ -68,14 +84,17 @@
               <div class="icon">
                 <i class="fa-solid fa-laptop-code"></i>
               </div>
-              <h4><a href="">Development Team</a></h4>
+              <h4><a href="" class="topic">Development Team</a></h4>
               <p>
-                The Web Development Team is the technical backbone of UOK TechClub. They
-                are skilled in programming languages such as HTML, CSS,
-                JavaScript, and various web development frameworks. This team's
-                primary goal is to transform design concepts into fully
-                functional websites and web applications, ensuring
-                responsiveness and optimal performance.
+                The Web Development Team is the technical backbone of UOK
+                TechClub. They are skilled in programming languages such as
+                HTML, CSS, JavaScript, and various web development frameworks.
+                This team's primary goal is to transform design concepts into
+                fully functional websites and web applications, ensuring
+                responsiveness and optimal performance. The developer’s team has
+                individuals for various areas as per their specialization such
+                as web development, mobile application development, QA &
+                requirement analysis.
               </p>
             </div>
           </div>
@@ -89,14 +108,15 @@
               <div class="icon">
                 <i class="fa-solid fa-camera-retro"></i>
               </div>
-              <h4><a href="">Media Team</a></h4>
+              <h4><a href="" class="topic">Media Team</a></h4>
               <p>
                 The Media Team is responsible for capturing and showcasing the
-                essence of UOK TechClub's activities. They use their photography and
-                videography skills to document events, workshops, and projects.
-                Additionally, the team excels in graphic design, creating
-                visually appealing promotional materials and digital content for
-                the club.
+                essence of UOK TechClub's activities. They use their photography
+                and videography skills to document events, workshops, and
+                projects. Additionally, the team excels in graphic design,
+                creating visually appealing promotional materials and digital
+                content for the club. UOK Media is one of the sectors that works
+                constantly to contribute to different Club activities.
               </p>
             </div>
           </div>
@@ -110,13 +130,15 @@
               <div class="icon">
                 <i class="fa-solid fa-clapperboard"></i>
               </div>
-              <h4><a href="">Event Organizer Team</a></h4>
+              <h4><a href="" class="topic">Event Organizer Team</a></h4>
               <p>
                 The Event Organizing Team is a dynamic group of individuals who
                 excel in planning, coordinating, and executing various club
                 activities. They are detail-oriented and ensure that events run
                 seamlessly, from conceptualization and logistics management to
-                participant engagement and post-event evaluation.
+                participant engagement and post-event evaluation. UOK Event team
+                is filled with energetic people who work hard to make every
+                event successful on behalf of the club.
               </p>
             </div>
           </div>
@@ -130,13 +152,15 @@
               <div class="icon">
                 <i class="fa-solid fa-person"></i>
               </div>
-              <h4><a href="">Public Relation Team</a></h4>
+              <h4><a href="" class="topic">Public Relation Team</a></h4>
               <p>
-                The Public Relations Team serves as the voice and face of UOK TechClub
-                to the wider community. They manage external communications,
-                maintain relationships with sponsors and partners, and promote
-                the club's initiatives. Their role is vital in building a
-                positive public image and expanding the club's reach.
+                The Public Relations Team serves as the voice and face of UOK
+                TechClub to the wider community. They manage external
+                communications, maintain relationships with sponsors and
+                partners, and promote the club's initiatives. Their role is
+                vital in building a positive public image and expanding the
+                club's reach. UOK Public Relations Team keeps the flow going
+                inside Club.
               </p>
             </div>
           </div>
@@ -150,19 +174,69 @@
               <div class="icon">
                 <i class="fa-solid fa-lightbulb"></i>
               </div>
-              <h4><a href="">Innovation and Projects Team</a></h4>
+              <h4><a href="" class="topic">Innovation and Projects Team</a></h4>
               <p>
                 The Innovation and Projects Team is the engine of innovation
-                within UOK TechClub. They are passionate about exploring emerging
-                technologies, conducting research, and initiating practical
-                projects. This team takes on ambitious challenges, develops
-                innovative solutions, and contributes to the tech community
-                through their hands-on work.
+                within UOK TechClub. They are passionate about exploring
+                emerging technologies, conducting research, and initiating
+                practical projects. This team takes on ambitious challenges,
+                develops innovative solutions, and contributes to the tech
+                community through their hands-on work.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="d-flex justify-content-center align-items-center p-4">
+        <iframe
+          class=""
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/FbSZf4i5rJw?si=-oBYZsOLbVkqmYpA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
+
+    <footer class="bg-black mb-0">
+      <div class="row">
+        <div class="col-2 p-3">
+          <img src="img/logo.png" alt="" class="w-75 d-none d-lg-flex" />
+        </div>
+
+        <div class="col-12 col-lg-9 p-4 p-lg-3">
+          <p>
+            At the Kelaniya University Computer Club, we're dedicated to
+            fostering innovation, collaboration, and a passion for technology.
+            We bring together students and tech enthusiasts from diverse
+            backgrounds to explore, learn, and create in the world of computing.
+            Join us on a journey of limitless possibilities.
+          </p>
+        </div>
+      </div>
+
+      <div class="row media-icon">
+        <div class="col-12 d-flex justify-content-center">
+          <i class="fa-brands fa-square-facebook me-5"></i>
+          <i class="fa-brands fa-square-instagram me-5"></i>
+          <i class="fa-brands fa-twitter me-4"></i>
+        </div>
+      </div>
+      <div class="row m-2">
+        <p class="coryright-phara">
+          &copy; 2023 Kelaniya University Computer Club. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="scripts/teams.js"></script>
   </body>
 </html>

@@ -84,8 +84,8 @@ header div {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  z-index: -10;
+  /* position: relative; */
+  /* z-index: -10; */
 }
 
 /* .info .layer {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/event.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link
@@ -17,16 +18,29 @@
   <body>
     <header>
       <div class="d-flex align-items-center">
-        <img src="img/logo.png" alt="" class="logo" />
+        <img src="img/logo.png" alt="" class="logo d-none d-lg-flex" />
         <h2>TechClub</h2>
       </div>
-      <nav class="nav-list">
+      <nav class="nav-list d-none d-lg-flex">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="#" class="active">Events</a>
         <a href="teams.html">Teams</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a href="index.html"
+          ><i class="fa-solid fa-house d-flex d-lg-none"></i
+        ></a>
+      <a href="about.html">
+        <i class="fa-solid fa-circle-info d-flex d-lg-none"></i>
+      </a>
+      
+      <a href="teams.html"
+        ><i class="fa-solid fa-users d-flex d-lg-none"></i
+      ></a>
+      <a href="contact.html"
+        ><i class="fa-solid fa-phone-volume d-flex d-lg-none"></i
+      ></a>
     </header>
 
     <section id="info">
@@ -59,7 +73,7 @@
           </div>
 
           <div class="row mt-3">
-            <div class="col-12 col-lg-6 bg-black m-2 p-3">
+            <div class="col-12 col-lg-6 bg-black m-2 p-3 order-1 order-lg-0">
               <h1>CYBER GAMING FEST</h1>
               <p>
                 <b>Cyber Gaming Fest</b> is a national event organized by UOK
@@ -75,13 +89,13 @@
               </p>
               <button class="btn btn-primary mt-4">Visit WEBSITE</button>
             </div>
-            <div class="col-12 col-lg-5 m-2 p-3">
+            <div class="col-12 col-lg-5 m-2 p-3 order-0 order-lg-1">
               <img src="img/gamingfest.png" alt="" class="w-100" />
             </div>
           </div>
 
           <div class="row mt-3">
-            <div class="col-12 col-lg-5 m-2 p-3">
+            <div class="col-12 col-lg-5 m-2 p-3 ">
               <img src="img/event3.png" alt="" class="w-100" />
             </div>
             <div class="col-12 col-lg-6 bg-black m-2 p-3">
@@ -99,7 +113,7 @@
           </div>
 
           <div class="row mt-3">
-            <div class="col-12 col-lg-6 bg-black m-2 p-3">
+            <div class="col-12 col-lg-6 bg-black m-2 p-3 order-1 order-lg-0">
               <h1>ICCA</h1>
               <p>
                 The Department of Industrial Management of University of
@@ -115,7 +129,7 @@
               </p>
               <button class="btn btn-primary mt-4">Visit WEBSITE</button>
             </div>
-            <div class="col-12 col-lg-5 m-2 p-3">
+            <div class="col-12 col-lg-5 m-2 p-3 order-0 order-lg-1">
               <img src="img/icca.png" alt="" class="w-100" />
             </div>
           </div>
@@ -147,10 +161,10 @@
             <footer class="">
               <div class="row">
                 <div class="col-2 p-3">
-                  <img src="img/logo.png" alt="" class="w-75" />
+                  <img src="img/logo.png" alt="" class="w-75 d-none d-lg-flex" />
                 </div>
       
-                <div class="col-9 p-3">
+                <div class="col-12 col-lg-9 p-4 p-lg-3">
                   <p>
                     At the Kelaniya University Computer Club, we're dedicated to
                     fostering innovation, collaboration, and a passion for technology.

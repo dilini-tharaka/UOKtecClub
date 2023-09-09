@@ -74,6 +74,11 @@ header {
     color: #fff;
   }
 
+  header i{
+    font-size: 25px;
+    color: #fff;
+}
+
   .logo {
     width: 26%;
   }
@@ -89,18 +94,30 @@ header {
 
 .info .layer {
   width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-  position: absolute;
+  height: 120px;
+  /* background-attachment: fixed; */
+  /* position: absolute; */
 }
 
-.info .content {
+.content .box .box-content {
+  width: 100%;
+  height: 250px;
+  /* background-color: #000; */
+  background: linear-gradient(to right, #2e252e, #000000);
+  color: #fff;
+  border-radius: 10px 45px;
+}
+/* .info .content {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
 }
 
-.main-headings {
+.main-headings{
   font-weight: bold;
   color: #ddd;
   text-align: center;
@@ -108,37 +125,31 @@ header {
   font-size: 56px;
   font-family: "IM Fell English SC", serif;
   text-decoration: overline;
-}
+} */
 
-.info .content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; 
-}
 
-.info .content .box {
+/* .info .content .box {
   width: 100%;
-  height: 400px;
+  height: 720px;
   margin-top: 60px; 
   position: relative;
-  /* background-color: #f2c12e; */
-}
+  background-color: #f2c12e;
+} */
 
-.content .box .box-img {
-  width: 60%;
+/* .content .box .box-img {
+  width: 100%;
   height: 400px;
   position: absolute;
-  /* padding-bottom: 0; */
-}
+  padding-bottom: 0;
+} */
 
-.content .box .box-img img {
+/* .content .box .box-img img {
   position: relative;
-  width: 75%;
+  width: 100%;
 }
 
 .content .box .box-content {
-  width: 50%;
+  width: 100%;
   height: 300px;
   position: absolute;
   background-color: #333;
@@ -160,9 +171,9 @@ header {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: justify;
   font-size: 20px;
-}
+} */
 
-.evenbcon {
+/* .evenbcon {
   top: 0;
   left: 0;
 }
@@ -170,8 +181,8 @@ header {
 .evenbimg {
   bottom: 0;
   right: 0;
-  /* margin-top: 45px; */
-  /* margin-bottom: 0; */
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 
 .oddbcon {
@@ -182,7 +193,7 @@ header {
 .oddbimg {
   top: 0;
   left: 0;
-}
+} */
 
 footer{
   color: #fff;
@@ -198,23 +209,26 @@ footer{
 
 @media (min-width: 992px) {
   /* .info .content .box {
-    width: 100%;
-    height: 600px;
-    margin-top: 50px;
+    height: 430px;
+    margin-top: 60px; 
     position: relative;
-  }
-   */
-  /* .evenbimg {
-    bottom: 0;
-    right: 0;
   } */
   
-  .box-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center !important;
-    align-items: center;
+  /* .content .box .box-img {
+    width: 60%;
+    height: 400px;
     position: absolute;
+    padding-bottom: 0;
+  } */
+  
+  /* .content .box .box-img img {
+    width: 75%;
+  } */
+  
+  .content .box .box-content {
+    width: 50%;
   }
-}
+  
+  
+  
+} 

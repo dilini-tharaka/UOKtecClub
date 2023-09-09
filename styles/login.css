@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.coontainer {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech h2 {
+  color: #fff;
+}
+
+header i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.box {
+  width: 300px;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  border: #fff solid 2px;
+  display: flex;
+  flex-direction: column;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.heading-container {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  padding: 5px;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+}
+
+.button-set {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #000 solid 2px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.login-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.register-button {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 2px;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+}
+
+.group {
+  width: 100%;
+}
+
+.input-form {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: #000 solid 1px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.group-inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-medium {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.register {
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.register:hover {
+  text-decoration: underline;
+}
+
+.login-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 2px;
+}
+
+.register-button:hover {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    margin-top: -70vh;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+

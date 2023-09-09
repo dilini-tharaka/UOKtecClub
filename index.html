@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link rel="shortcut icon" href="img/logo1.jpg" type="image/x-icon" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -21,28 +22,40 @@
     />
     <script src="scripts/main.js"></script>
 
-    <title>TecCLUB</title>
+    <title>TechCLUB</title>
   </head>
   <body>
     <header>
-      <div class="d-flex align-items-center">
-        <img src="img/logo.png" alt="" class="logo" />
+      <div class="d-flex align-items-center tech">
+        <img src="img/logo.png" alt="" class="logo d-none d-lg-flex" />
         <h2>TechClub</h2>
       </div>
-      <nav class="nav-list">
+      <nav class="nav-list d-none d-lg-flex">
         <a href="#" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="event.html">Events</a>
         <a href="teams.html">Teams</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a href="about.html">
+        <i class="fa-solid fa-circle-info d-flex d-lg-none"></i>
+      </a>
+      <a href="event.html"
+        ><i class="fa-solid fa-camera d-flex d-lg-none"></i
+      ></a>
+      <a href="teams.html"
+        ><i class="fa-solid fa-users d-flex d-lg-none"></i
+      ></a>
+      <a href="contact.html"
+        ><i class="fa-solid fa-phone-volume d-flex d-lg-none"></i
+      ></a>
     </header>
 
     <main>
       <section id="home">
-        <div class="row h-100">
+        <div class="row min-vh-100">
           <div
-            class="col-12 col-lg-6 h-100 d-flex justify-content-center align-items-center"
+            class="col-12 col-lg-6 min-vh-100 d-flex justify-content-center align-items-center"
           >
             <div class="p-3 m-3">
               <span class="slogan">
@@ -55,25 +68,29 @@
               </span>
               <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                  <button class="btn btn-primary mt-3">Join With Us</button>
+                  <a href="login.html"
+                    ><button class="btn btn-primary mt-3">
+                      Join With Us
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="col-12 col-lg-6 h-100 d-flex justify-content-center align-items-center"
+            class="col-12 col-lg-6 min-vh-100 d-flex justify-content-center align-items-center"
           >
             <img src="./img/home.png" class="img-fluid" />
           </div>
         </div>
       </section>
-      <section id="about" class="vh-100">
-        <div class="row h-100">
+      <section id="about" class="min-vh-100">
+        <div class="row">
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-6 m-2 p-5">
-              <img src="img/batch.jpg" alt="" />
+              <img src="img/batch.jpg" alt="" class="w-100" />
             </div>
-            <div class="col-12 col-lg-5 p-4 m-4 about-text">
+            <div class="col-12 col-lg-5 p-5 p-lg-4 m-5 m-lg-4 about-text">
               <h1>About us</h1>
               <p>
                 Welcome to the Kelaniya University Computer Club, a vibrant
@@ -92,12 +109,12 @@
           </div>
         </div>
       </section>
-      <section id="events" class="vh-100">
-        <div class="row h-100 d-flex">
+      <section id="events">
+        <div class="row d-flex">
           <div class="col-12 event-title p-5">
             <h1>Our Events</h1>
           </div>
-          <div class="col-12 event-container">
+          <div class="col-12 event-container min-vh-100">
             <div class="row d-flex justify-content-center">
               <div
                 class="col-8 col-lg-3 border position-relative d-flex justify-content-center align-items-center img1"
@@ -128,14 +145,16 @@
               </div>
             </div>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-primary mt-5">
-                Check Out More Of Events
-              </button>
+              <a href="event.html"
+                ><button class="btn btn-primary mt-1 mt-lg-5">
+                  Check Out More Of Events
+                </button></a
+              >
             </div>
           </div>
         </div>
       </section>
-      <section id="teams" class="vh-100">
+      <section id="teams" class="min-vh-100">
         <div class="row">
           <div class="col-12 m-3 p-4 team-text">
             <h1>Our Teams</h1>
@@ -176,7 +195,7 @@
                 <span class="counter-value">38</span>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 " id="countdown-placeholder">
+            <div class="col-md-3 col-sm-6" id="countdown-placeholder">
               <div class="counter green">
                 <div class="counter-content">
                   <div class="counter-icon">
@@ -188,16 +207,15 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="row bg-black mt-5">
           <footer class="">
             <div class="row">
               <div class="col-2 p-3">
-                <img src="img/logo.png" alt="" class="w-75" />
+                <img src="img/logo.png" alt="" class="w-75 d-none d-lg-flex" />
               </div>
 
-              <div class="col-9 p-3">
+              <div class="col-12 col-lg-9 p-4 p-lg-3">
                 <p>
                   At the Kelaniya University Computer Club, we're dedicated to
                   fostering innovation, collaboration, and a passion for
@@ -227,6 +245,5 @@
       </section>
       <section id="contact"></section>
     </main>
-
   </body>
 </html>

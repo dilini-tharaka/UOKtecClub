@@ -17,16 +17,28 @@
   <body>
     <header>
       <div class="d-flex align-items-center">
-        <img src="img/logo.png" alt="" class="logo" />
+        <img src="img/logo.png" alt="" class="logo d-none d-lg-flex" />
         <h2>TechClub</h2>
       </div>
-      <nav class="nav-list">
+      <nav class="nav-list d-none d-lg-flex">
         <a href="index.html">Home</a>
         <a href="#" class="active">About</a>
         <a href="event.html">Events</a>
         <a href="teams.html">Teams</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a href="index.html"
+          ><i class="fa-solid fa-house d-flex d-lg-none"></i
+        ></a>
+      <a href="event.html"
+        ><i class="fa-solid fa-camera d-flex d-lg-none"></i
+      ></a>
+      <a href="teams.html"
+        ><i class="fa-solid fa-users d-flex d-lg-none"></i
+      ></a>
+      <a href="contact.html"
+      ><i class="fa-solid fa-phone-volume d-flex d-lg-none"></i
+    ></a>
     </header>
 
     <section id="info">
@@ -34,12 +46,11 @@
       <div class="section info">
         <div class="layer"></div>
         <div class="content">
-          <!-- <h1 class="main-headings">Game Overview</h1> -->
-          <div class="box">
-            <div class="box-img oddbimg">
-              <img src="img/history.png" alt="" />
+          <div class="box row">
+            <div class="box-img oddbimg col-12 col-lg-6">
+              <img src="img/history.png" alt=""  class="w-100 p-3 p-lg-4" />
             </div>
-            <div class="box-content oddbcon">
+            <div class="box-content oddbcon col-12 col-lg-6 p-5">
               <h2>The Beginning</h2>
               <p>
                 In 2012, the journey of Kelaniya University Computer Club began.
@@ -51,11 +62,9 @@
             </div>
           </div>
 
-          <div class="box">
-            <div class="box-img evenbimg">
-              <img src="img/batch.jpg" alt="" />
-            </div>
-            <div class="box-content evenbcon">
+          <div class="box row mb-5 mt-5">
+            
+            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0">
               <h2>The Community</h2>
               <p>
                 Continuing our journey, UOK TechClub has grown into one of the
@@ -65,13 +74,17 @@
                 diverse backgrounds.
               </p>
             </div>
+
+            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1">
+              <img src="img/batch.jpg" alt="" class="w-100 p-3 p-lg-5"/>
+            </div>
           </div>
 
-          <div class="box">
-            <div class="box-img oddbimg">
-              <img src="img/vission.jpg" alt="" />
+          <div class="box row">
+            <div class="box-img oddbimg col-12 col-lg-6">
+              <img src="img/vission.jpg" alt="" class="w-100 p-3 p-lg-5"/>
             </div>
-            <div class="box-content oddbcon">
+            <div class="box-content oddbcon col-12 col-lg-6 p-5">
               <h2>Our Vission</h2>
               <p>
                 To be the driving force behind technological innovation and
@@ -81,11 +94,9 @@
             </div>
           </div>
 
-          <div class="box">
-            <div class="box-img evenbimg">
-              <img src="img/mission.jpg" alt="" />
-            </div>
-            <div class="box-content evenbcon">
+          <div class="box row">
+            
+            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0">
               <h2>Our Mission</h2>
               <p>
                 UOK TechClub started with a mission committed to its members to
@@ -93,6 +104,9 @@
                 world. We believe one always must stay rationalized if he/she
                 wants to subsist in today’s competitive technology driven world.
               </p>
+            </div>
+            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1">
+              <img src="img/mission.jpg" alt="" class="w-100 p-3 p-lg-5"/>
             </div>
           </div>
         </div>
@@ -102,10 +116,10 @@
       <footer class="">
         <div class="row">
           <div class="col-2 p-3">
-            <img src="img/logo.png" alt="" class="w-75" />
+            <img src="img/logo.png" alt="" class="w-75 d-none d-lg-flex" />
           </div>
 
-          <div class="col-9 p-3">
+          <div class="col-12 col-lg-9 p-4 p-lg-3">
             <p>
               At the Kelaniya University Computer Club, we're dedicated to
               fostering innovation, collaboration, and a passion for technology.
