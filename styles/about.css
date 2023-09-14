@@ -107,93 +107,7 @@ header {
   color: #fff;
   border-radius: 10px 45px;
 }
-/* .info .content {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; 
-}
 
-.main-headings{
-  font-weight: bold;
-  color: #ddd;
-  text-align: center;
-  padding-top: 30px;
-  font-size: 56px;
-  font-family: "IM Fell English SC", serif;
-  text-decoration: overline;
-} */
-
-
-/* .info .content .box {
-  width: 100%;
-  height: 720px;
-  margin-top: 60px; 
-  position: relative;
-  background-color: #f2c12e;
-} */
-
-/* .content .box .box-img {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  padding-bottom: 0;
-} */
-
-/* .content .box .box-img img {
-  position: relative;
-  width: 100%;
-}
-
-.content .box .box-content {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  background-color: #333;
-  border-radius: 10px;
-  color: #ddd;
-  box-shadow: 0 0 5px 0 #ddd;
-  padding: 25px 150px 20px 35px;
-}
-
-.content .box .box-content h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.content .box .box-content p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: justify;
-  font-size: 20px;
-} */
-
-/* .evenbcon {
-  top: 0;
-  left: 0;
-}
-
-.evenbimg {
-  bottom: 0;
-  right: 0;
-  margin-top: 45px;
-  margin-bottom: 0;
-}
-
-.oddbcon {
-  bottom: 0;
-  right: 0;
-}
-
-.oddbimg {
-  top: 0;
-  left: 0;
-} */
 
 footer{
   color: #fff;
@@ -208,27 +122,7 @@ footer{
 }
 
 @media (min-width: 992px) {
-  /* .info .content .box {
-    height: 430px;
-    margin-top: 60px; 
-    position: relative;
-  } */
-  
-  /* .content .box .box-img {
-    width: 60%;
-    height: 400px;
-    position: absolute;
-    padding-bottom: 0;
-  } */
-  
-  /* .content .box .box-img img {
-    width: 75%;
-  } */
-  
   .content .box .box-content {
     width: 50%;
-  }
-  
-  
-  
+  } 
 } 

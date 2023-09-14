@@ -105,4 +105,3 @@ function sendMessage() {
       mobile.value = "";
   }
 }
-

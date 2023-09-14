@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="styles/login.css" />
-    <link rel="shortcut icon" href="img/logo1.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/kelaniya.png" type="image/x-icon" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -21,6 +21,9 @@
       referrerpolicy="no-referrer"
     />
     <script src="scripts/main.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>TechCLUB</title>
   </head>
@@ -80,6 +83,7 @@
           <div
             class="col-12 col-lg-6 min-vh-100 d-flex justify-content-center align-items-center"
           >
+            
             <img src="./img/home.png" class="img-fluid" />
           </div>
         </div>
@@ -87,7 +91,7 @@
       <section id="about" class="min-vh-100">
         <div class="row">
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-lg-6 m-2 p-5">
+            <div class="col-12 col-lg-6 m-2 p-5" data-aos="fade-right">
               <img src="img/batch.jpg" alt="" class="w-100" />
             </div>
             <div class="col-12 col-lg-5 p-5 p-lg-4 m-5 m-lg-4 about-text">
@@ -245,5 +249,9 @@
       </section>
       <section id="contact"></section>
     </main>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

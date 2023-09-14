@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/kelaniya.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link
@@ -12,6 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>About</title>
   </head>
   <body>
@@ -47,10 +51,10 @@
         <div class="layer"></div>
         <div class="content">
           <div class="box row">
-            <div class="box-img oddbimg col-12 col-lg-6">
+            <div class="box-img oddbimg col-12 col-lg-6" data-aos="fade-up-right">
               <img src="img/history.png" alt=""  class="w-100 p-3 p-lg-4" />
             </div>
-            <div class="box-content oddbcon col-12 col-lg-6 p-5">
+            <div class="box-content oddbcon col-12 col-lg-6 p-5" data-aos="fade-left">
               <h2>The Beginning</h2>
               <p>
                 In 2012, the journey of Kelaniya University Computer Club began.
@@ -64,7 +68,7 @@
 
           <div class="box row mb-5 mt-5">
             
-            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0">
+            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0" data-aos="fade-right" data-aos-delay="150">
               <h2>The Community</h2>
               <p>
                 Continuing our journey, UOK TechClub has grown into one of the
@@ -75,16 +79,16 @@
               </p>
             </div>
 
-            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1">
+            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1" data-aos="fade-up-left" data-aos-delay="150">
               <img src="img/batch.jpg" alt="" class="w-100 p-3 p-lg-5"/>
             </div>
           </div>
 
           <div class="box row">
-            <div class="box-img oddbimg col-12 col-lg-6">
+            <div class="box-img oddbimg col-12 col-lg-6" data-aos="fade-up-right" data-aos-delay="350">
               <img src="img/vission.jpg" alt="" class="w-100 p-3 p-lg-5"/>
             </div>
-            <div class="box-content oddbcon col-12 col-lg-6 p-5">
+            <div class="box-content oddbcon col-12 col-lg-6 p-5" data-aos="fade-left" data-aos-delay="350">
               <h2>Our Vission</h2>
               <p>
                 To be the driving force behind technological innovation and
@@ -96,7 +100,7 @@
 
           <div class="box row">
             
-            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0">
+            <div class="box-content evenbcon col-12 col-lg-6 p-5 order-1 order-lg-0" data-aos="fade-right" data-aos-delay="400">
               <h2>Our Mission</h2>
               <p>
                 UOK TechClub started with a mission committed to its members to
@@ -105,7 +109,7 @@
                 wants to subsist in today’s competitive technology driven world.
               </p>
             </div>
-            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1">
+            <div class="box-img evenbimg col-12 col-lg-6 order-0 order-lg-1" data-aos="fade-up-left" data-aos-delay="400">
               <img src="img/mission.jpg" alt="" class="w-100 p-3 p-lg-5"/>
             </div>
           </div>
@@ -144,5 +148,8 @@
         </div>
       </footer>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

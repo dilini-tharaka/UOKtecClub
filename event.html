@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/kelaniya.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/event.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
@@ -13,6 +14,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Events</title>
   </head>
   <body>
@@ -48,7 +52,7 @@
       <div class="section info min-vh-100">
         <!-- <div class="layer"></div> -->
         <div class="content">
-          <div>
+          <div data-aos="fade-down">
             <img src="img/bgevent.jpg" alt="" class="w-100 mt-5" />
           </div>
 
@@ -68,7 +72,9 @@
                 Vice-Chancellor, Deans, Faculty members, and Administrative
                 officers.
               </p>
-              <button class="btn btn-primary mt-3">Visit WEBSITE</button>
+              <button class="btn btn-primary mt-3" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Visit WEBSITE</button>
             </div>
           </div>
 
@@ -87,7 +93,9 @@
                 games, for example, CS: GO, DOTA 2, FIFA, NFS, VR Game, and some
                 more.
               </p>
-              <button class="btn btn-primary mt-4">Visit WEBSITE</button>
+              <button class="btn btn-primary mt-4" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Visit WEBSITE</button>
             </div>
             <div class="col-12 col-lg-5 m-2 p-3 order-0 order-lg-1">
               <img src="img/gamingfest.png" alt="" class="w-100" />
@@ -108,7 +116,9 @@
                 2019 to give members of a segregated opportunity to demonstrate
                 their talents and inspire them to nourish those.
               </p>
-              <button class="btn btn-primary mt-4">Visit WEBSITE</button>
+              <button class="btn btn-primary mt-4" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Visit WEBSITE</button>
             </div>
           </div>
 
@@ -127,7 +137,9 @@
                 researchers of computer science from home and abroad
                 participated.
               </p>
-              <button class="btn btn-primary mt-4">Visit WEBSITE</button>
+              <button class="btn btn-primary mt-4" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Visit WEBSITE</button>
             </div>
             <div class="col-12 col-lg-5 m-2 p-3 order-0 order-lg-1">
               <img src="img/icca.png" alt="" class="w-100" />
@@ -153,7 +165,9 @@
                 area. Members of UOK TechClub worked in different sectors of
                 this event.
               </p>
-              <button class="btn btn-primary mt-4">Visit WEBSITE</button>
+              <button class="btn btn-primary mt-4" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Visit WEBSITE</button>
             </div>
           </div>
 
@@ -192,5 +206,8 @@
         </div>
       </div>
     </section>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
