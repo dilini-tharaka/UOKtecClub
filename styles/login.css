@@ -124,8 +124,8 @@ header i{
 }
 
 .login-button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #a39ca3;
+  color: #000000;
   border: #000 solid 2px;
 }
 

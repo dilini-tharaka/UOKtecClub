@@ -43,30 +43,47 @@
           ><i class="fa-solid fa-phone-volume d-flex d-lg-none"></i
         ></a>
       </header>
-      <div class="box" action = "connection.php">
+      <div class="box">
         <div class="heading-container">
-          <h1 class="heading">Sign In</h1>
+          <h1 class="heading">Sign Up</h1>
         </div>
         <div class="button-set">
+            <a class="btn mx-3 btn-outline-dark " href="login.html"
+            >
+              Sign In
+            </a>
           <button
             type="button"
-            class="button login-button"
+            class="btn mx-3 btn-dark"
             id="btn-send"
             value="Send"
-            onclick="sendMessage()"
           >
-            Sign In
+            Sign Up
           </button>
-          <a href="signup.html"><button type="button" class="button register-button">Sign Up</button></a>
+
         </div>
-        <div class="form">
+        <form class="form" action="./process/register.php" method="POST">
           <div class="group">
             <label>Email Address</label>
-            <input type="text" class="input-form" id="email" />
+            <input
+              type="text"
+              class="form-control border-1"
+              name="email"
+              data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid email.</div>
           </div>
           <div class="group">
             <label>Password</label>
-            <input type="password" class="input-form" id="pword" />
+            <input
+              type="password"
+              class="form-control border-1"
+              name="password"
+              data-pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a Strong Password.</div>
           </div>
           <div class="group group-inline">
             <button
@@ -74,16 +91,59 @@
               class="button login-button btn-medium"
               id="btn-send"
               value="Send"
-              onclick="sendMessage()"
+              onclick="register()"
             >
-              Sign In
+              Sign Up
             </button>
             <a href="signup.html" class="register">I don't have an account</a>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-    <script src="scripts/login.js"></script>
+    <script>
+      function register() {
+        const form = document.querySelector(".form");
+        const inputs = form.querySelectorAll(".form-control");
+
+        let isValid = true;
+        inputs.forEach((input) => {
+          let pattern = new RegExp(input.dataset.pattern);
+          if (!pattern.test(input.value)) {
+            isValid = false;
+            input.classList.add("is-invalid");
+          } else {
+            input.classList.remove("is-invalid");
+          }
+        });
+
+        if (!isValid) {
+          return;
+        }
+
+        const formData = new FormData(form);
+
+        fetch("./process/register.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((json) => {
+            Swal.fire({
+              icon: json.status,
+              title: json.status,
+              text: json.message,
+            });
+            form.reset();
+          })
+          .catch((error) => {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: error.message,
+            });
+          });
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
